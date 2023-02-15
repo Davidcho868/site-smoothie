@@ -1,86 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="base.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smoothie</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#logo"><img src="img/logoblanc.svg" alt="logo" id="logo"></a>
-                <ul>
-                    <li><a href="#"> Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Contacts</a></li>
+    <header class="py-3">
+        <!-- on rajoute une div avec la class container qui contient le contenu de façon à ce que le fond prenne toute la largeur mais que le contenu, lui, soit limité -->
+        <div class="container text-white">
+            <nav class="d-flex justify-content-between align-items-center">
+                <a id="logo" href="#"><img src="img/logoblanc.svg" alt="logo vendeur de smoothies"></a>
+                <ul class="d-flex list-unstyled gap-3">
+                    <li><a class="text-white text-decoration-none" href="#">Accueil</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Produits</a></li>
+                    <li><a class="text-white text-decoration-none" href="#">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Fabricants de smoothies bio</h1>
+            <h1 class="text-center">Fabriquants de smoothies bio</h1>
         </div>
     </header>
-    <section id="devise">
-        <img src="img/fond rose.jpg" alt="verre fond rose">
-        <div>
-            <h2>NOTRE DEVISE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum a eligendi provident veniam suscipit
-                magni
-                excepturi commodi mollitia adipisci in explicabo debitis quasi, quae, odio dolorum non, repellendus
-                libero.
-                Quisquam laudantium praesentium temporibus numquam doloribus!</p>
+    <section id="devise" class="container my-5">
+        <div class="row align-items-md-center gap-4 gap-md-0">
+            <img class="col-6 offset-3 col-md-4 offset-md-0" src="img/fond rose.jpg" alt="smoothie fruits">
+            <article class="col-12 col-md-8 text-center text-md-start">
+                <h2 class="text-uppercase text-center fw-bold">Notre devise</h2>
+                Consequat dolore dolore pariatur veniam nulla proident. Do ut aute dolor id reprehenderit ut aliquip
+                qui.
+                Voluptate ullamco non minim et. Sit amet cillum non quis amet esse sint ad nulla commodo exercitation
+                cillum
+                anim.
+            </article>
         </div>
     </section>
-    <section id="methode">
-        <h2>Méthode de fabrication</h2>
-        <img src="img/tree-02.png">
-        <p>Nos producteurs récoltent les meilleurs fruits à la main</p>
-        <img src="img/bike-bmx.png">
-        <p>Nos fruits sont livrés par des méthodes de transport écologiques</p>
-        <img src="img/chef.png">
-        <p>Nos smoothiers préparent vos smoothies à la demande et sous vos yeux</p>
-        <img src="img/juice.png">
-        <p>Vous dégustez votre smoothie sous l'ombre de nos palmiers</p>
-    </section>
-    <section id="concept">
-        <div class="container">
-            <h2>Le Concept</h2>
-            <div id="item">
-                <ul>
-                    <li><img src="img/blender.png"></li>
-                    <li>
-                        <h3>Pressés sur place</h3>
-                    </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                </ul>
-                <ul>
-                    <li><img src="img/kiwi.png"></li>
-                    <li>
-                        <h3>Produits frais</h3>
-                    </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                </ul>
-                <ul>
-                    <li><img src="img/organic.png"></li>
-                    <li>
-                        <h3>Produits bios et locaux</h3>
-                    </li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                </ul>
-            </div>
+    <section id="fabrication"  class="row text-center text-white">
+        <div class="container p-4">
+            <h2 class="text-uppercase text-center fw-bold mb-4">Méthode de fabrication</h2>
+            <ul class="list-unstyled">
+                <li class="my-4">
+                    <img src="img/tree-02.png" alt="producteurs locaux">
+                    <h3>Nos producteurs récoltent les meilleurs fruits à la main</h3>
+                </li>
+                <li class="my-4">
+                    <img src="img/bike-bmx.png" alt="transports écologiques">
+                    <h3>Nos fruits sont livrés par des méthodes de transport écologiques</h3>
+                </li>
+                <li class="my-4">
+                    <img src="img/chef.png" alt="faits maison">
+                    <h3>Nos smoothiers préparent vos smoothies à la demande et sous vos yeux</h3>
+                </li>
+                <li class="my-4">
+                    <img src="img/juice.png" alt="terrasse">
+                    <h3>Vous dégustez votre smoothie sous l'ombre de nos palmiers</h3>
+                </li>
+            </ul>
         </div>
     </section>
-
-    <footer>
+    <section id="items" class="container my-5">
+        <h2 class="text-uppercase text-center fw-bold mb-5">Le concept</h2>
+        <ul class="d-flex flex-column list-unstyled justify-content-between text-center flex-md-row">
+            <li>
+                <img src="img/blender.png" alt="faits maison">
+                <h3>Pressés sur place</h3>
+                <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
+            </li>
+            <li>
+                <img src="img/kiwi.png" alt="produits frais">
+                <h3>Produits frais</h3>
+                <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
+            </li>
+            <li>
+                <img src="img/organic.png" alt="bios et locaux">
+                <h3>Produits bios et locaux</h3>
+                <p>Ipsum qui adipisicing quis mollit nostrud laboris dolore.</p>
+            </li>
+        </ul>
+    </section>
+    <footer class="text-white text-center p-2">
         2019 © AH
     </footer>
 </body>
-
-
 
 </html>

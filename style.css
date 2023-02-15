@@ -2,102 +2,30 @@
 
 
 
-body{
+h1 {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    margin: 150px;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    font-size: 1.6rem;
-    line-height: 1.6;
 }
 
-.container{
-    max-width: 1060px;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-h1{
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 40px;
-    letter-spacing: 10px;
-    margin: 150px 0;
-}
-
-h2{
-    text-align: center;
-    text-transform: uppercase;
-}
-
-header{
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(img/detoxcuresmoothie.jpg);
-    background-size: cover;
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/detoxcuresmoothie.jpg);
     background-position: center;
-    padding: 20px;
-    color: white;
+    background-size: cover;
 }
 
-
-
-header nav img{
-    height: 60px;
+header nav img {
+    height: 50px;
+    width: auto;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#fabrication {
+    background: linear-gradient(#feb4c3, #f59e28);
 }
 
-header nav ul {
-    display: flex;
-    gap: 30px;
+footer {
+    background: #f59e28;
 }
-
-#devise img{
-    width: 60%;
-    margin: 70px;
-}
-
-#devise{
-    display: flex;
-    align-items: center;
-    
-}
-
-#methode{
-    background: linear-gradient( pink, orange);
-    text-align: center;
-    color: white;
-}
-
-#methode img{
-    padding-top: 40px;
-}
-
-#item {
-    display: flex;
-    justify-content: center;
-}
-
-#item ul{
-    text-align: center;
-}
-
-
-
-footer{
-    background-color: orange;
-    text-align: center;
-    color: white;
-}
-
-@media screen and (max-width: 780px) {
-
-    #devise, #item{
-        flex-direction: column;
-        text-align: center;
-    }
-    }
-
-
